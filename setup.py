@@ -29,7 +29,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-from setuptools import setup
+from setuptools import setup, find_packages()
 
 
 setup(
@@ -44,7 +44,7 @@ setup(
     url='https://github.com/zyga/django-pagination',
     test_suite='linaro_django_pagination.test_project.tests.run_tests',
     license='BSD',
-    packages=['django-pagination/linaro_django_pagination'],
+    packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
         "Environment :: Web Environment",
